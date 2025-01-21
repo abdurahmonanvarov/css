@@ -42,7 +42,8 @@ body {
   margin-bottom: 45px;
 }
 .main .info .mainInfo {
-  width: 891px;
+  width: 100%;
+  max-width: 891px;
   text-align: center;
   font-size: 50px;
   font-weight: 800;
@@ -52,12 +53,14 @@ body {
   font-size: 24px;
   font-weight: 500;
   color: #d1d0d5;
+  text-align: center;
 }
 .form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 460px;
+  width: 100%;
+  max-width: 460px;
   align-items: center;
   gap: 24px;
   margin-bottom: 134px;
@@ -84,16 +87,15 @@ body {
 .label {
   display: block;
 }
-
 .salom {
   display: block;
   font-size: 14px;
   margin-bottom: 5px;
   color: #ffffff;
 }
-
 input {
-  width: 370px;
+  width: 450px;
+  max-width: 370px;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
@@ -105,7 +107,8 @@ button {
   background-color: #f57463;
   font-weight: 800;
   color: #0d082d;
-  width: 370px;
+  width: 100%;
+  max-width: 370px;
   height: 54px;
   border-radius: 12px;
   cursor: pointer;
@@ -113,4 +116,94 @@ button {
 button:hover {
   background-color: #c04e3f;
   transition: 0.5s;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .main .info .mainInfo {
+    font-size: 40px;
+  }
+  .main .info .mainParagirif {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header1 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .header1 .header .logoName {
+    font-size: 20px;
+  }
+  .main .info .mainInfo {
+    font-size: 30px;
+  }
+  .main .info .mainParagirif {
+    font-size: 18px;
+  }
+  .form {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header1 .header .logoImg {
+    width: 20px;
+    height: 20px;
+  }
+  .header1 .header .logoName {
+    font-size: 16px;
+  }
+  .main .info .mainInfo {
+    font-size: 24px;
+  }
+  .main .info .mainParagirif {
+    font-size: 16px;
+  }
+  input {
+    font-size: 14px;
+  }
+  button {
+    font-size: 14px;
+    height: 48px;
+  }
+}
+@media (max-width: 320px) {
+  .header1 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .header1 .header {
+    gap: 8px;
+  }
+  .header1 .header .logoImg {
+    width: 16px;
+    height: 16px;
+  }
+  .header1 .header .logoName {
+    font-size: 14px;
+  }
+  .main .info .mainInfo {
+    font-size: 20px;
+    padding: 0 10px;
+  }
+  .main .info .mainParagirif {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  .form {
+    gap: 16px;
+    margin-bottom: 100px;
+  }
+  input {
+    font-size: 12px;
+    padding: 8px;
+    width: 250.4px;
+  }
+  button {
+    font-size: 12px;
+    height: 40px;
+  }
 }
