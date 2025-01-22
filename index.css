@@ -170,7 +170,7 @@ button:hover {
     height: 48px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 345px) {
   .header1 {
     margin-top: 10px;
     margin-bottom: 30px;
